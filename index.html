@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/frontend/images/icon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+  <link rel="stylesheet" href="/frontend/css/home.css">
+  <link rel="stylesheet" href="/frontend/css/style.css">
+  <link rel="stylesheet" href="/frontend/css/animation.css">
+  <link rel="stylesheet" href="/frontend/css/btn-home.css">
+  <link rel="stylesheet" href="/frontend/css/footer.css">
+  <script defer src="/frontend/js/animation.js"></script>
+  <script defer src="/frontend/js/navbar.js"></script>
+  <title id="title">Home</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-transparent fixed-top">
+    <a class="navbar-brand" href="/frontend/index.html">
+      <img src="/frontend/images/house-fill.svg"/>
+      Home
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="nav()">
+      <img id="nav-icon" src="/frontend/images/ham.svg"></img>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/frontend/forms.html?type=login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/frontend/forms.html?type=sign-up">Sign up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/frontend/passwords.html">Le mie passwords</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <h1 class="text-dark text-center">PASSWORD MANAGER</h1>
+    <div class="father text-center">
+      <div class="child container text-center hidden">
+        <a href="#1" class="nav-link">
+          <img src="/frontend/images/info-icon.svg" alt="Informazioni" height="100px"><br>
+          Informazioni
+        </a>
+      </div>
+      <div class="child container text-center hidden">
+        <a href="#2" class="nav-link">
+          <img src="/frontend/images/person-plus.svg" alt="Iscriviti" height="100px"><br>
+          Iscriviti
+        </a>
+      </div>
+      <div class="child container text-center hidden">
+        <a href="#3" class="nav-link">
+          <img src="/frontend/images/icon.svg" alt="Login" height="100px"><br>
+          Accedi
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="hidden" id="1">
+    <div class="container p-4 row">
+      <div class="container col-sm-5">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="/frontend/images/question-mark.svg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/frontend/images/info-icon.svg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/frontend/images/key.svg" alt="Third slide">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+      <div class="d-flex align-items-center col-sm-3 text-right">
+        <p>
+          Psw-manager è un'applicazione che serve per 
+          salvare le proprie password e accedendo al sito 
+          è possibile controllarle evitando quindi di dimenticarsela
+          <span class="badge badge-dark">
+            <a href="/frontend/informazioni.html" class="text-white">
+              Leggi tutte le funzionalità
+            </a>
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="hidden" id="2">
+    <div class="container p-4 row">
+      <div class="d-flex align-items-center col-sm-3 text-left">
+        <p>
+          Se non hai ancora un account e sei interessato al nostro servizio
+          premi qua sotto per creare un account ed iniziare ad usare l'app
+          <span class="badge badge-dark">
+            <a href="/frontend/forms.html?type=sign-up" class="text-white">
+              Crea il tuo account subito
+            </a>
+          </span>
+        </p>
+      </div>
+      <div class="col-sm-4"></div>
+      <div class="container col-sm-5">
+        <img src="/frontend/images/person-plus.svg"/>
+      </div>
+    </div>
+  </section>
+  <section class="hidden" id="3">
+    <div class="container p-4 row">
+      <div class="container col-sm-5">
+        <img src="/frontend/images/login-image.svg"/>
+      </div>
+      <div class="col-sm-4"></div>
+      <div class="d-flex align-items-center col-sm-3 text-right">
+        <p>
+          Se hai già un account e vuoi effettuare l'accesso alle
+          tue password premi qui sotto per effettuare l'accesso
+          <span class="badge badge-dark">
+            <a href="/frontend/forms.html?type=login" class="text-white">
+              Login
+            </a>
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <a class="btn-home" href="#">
+    <img src="/frontend/images/house.svg" alt="Torna in alto">
+  </a>
+  <div class="container footer fixed-bottom">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="text-muted">© Psw Manager</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3 p-1">
+          <a class="text-muted" href="https://instagram.com">
+            <img src="/frontend/images/instagram.svg" alt="icona instagram" height="24px">
+          </a>
+        </li>
+        <li class="ms-3 p-1">
+          <a class="text-muted" href="https://twitter.com/elonmusk/status/1593767953706921985">
+            <img src="/frontend/images/twitter.svg" alt="icona twitter" height="24px">
+          </a>
+        </li>
+        <li class="ms-3 p-1">
+          <a class="text-muted" href="https://facebook.com">
+            <img src="/frontend/images/facebook.svg" alt="icona facebook" height="24px">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
