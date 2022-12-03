@@ -61,7 +61,7 @@ h6 span{
   color: #000000;
   background-color: #ffffff;
   font-family: 'unicons';
-  content: url("/frontend/images/arrow-up-left.svg");
+  content: url("/images/arrow-up-left.svg");
   z-index: 20;
   top: -10px;
   left: -10px;
