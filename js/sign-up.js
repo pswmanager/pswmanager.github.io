@@ -13,7 +13,7 @@ function creaUtente(e) {
         if(data.username === undefined) {
             alert('Qualcosa non ha funzionato')
         } else {
-            window.location.replace('/frontend/forms.html?type=login');
+            window.location.replace('/forms.html?type=login');
         }
         
     }, JSON.stringify({

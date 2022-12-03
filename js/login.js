@@ -13,7 +13,7 @@ function accesso(e){
             return;
         }
         sessionStorage.setItem("id", data.id);
-        window.location.replace("/frontend/passwords.html");
+        window.location.replace("/passwords.html");
     })
 
 }

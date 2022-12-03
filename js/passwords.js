@@ -1,6 +1,6 @@
 function init(){
     if(sessionStorage.id == 'null' || sessionStorage.id == undefined){
-        window.location.replace("/frontend/forms.html?type=login");
+        window.location.replace("/forms.html?type=login");
         alert("Prima di poter accedere alla tua sezione personale devi effettuare l'accesso")
     }
     reload();
@@ -8,7 +8,7 @@ function init(){
 
 function logout(){
     sessionStorage.id = null;
-    window.location.replace("/frontend/index.html");
+    window.location.replace("/index.html");
 }
 
 function hideloader(){
@@ -30,7 +30,7 @@ function show_no_psw(){
 function pswVisibility(id){
     var visible = document.getElementById('input-' + id).type == 'password' ? false : true;
     document.getElementById('input-' + id).type = visible ? 'password' : 'text';
-    document.getElementById('eye-' + id).src = visible ? '/frontend/images/eye.svg' : '/frontend/images/eye-slash.svg'
+    document.getElementById('eye-' + id).src = visible ? '/images/eye.svg' : '/images/eye-slash.svg'
 }
 
 function reload(){

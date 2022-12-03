@@ -30,7 +30,7 @@ function aggiungiPassword(e){
     .then(res =>{
         if(res.ok) {
             console.log("success");
-            window.location.replace("/frontend/passwords.html");
+            window.location.replace("/passwords.html");
         } else {
             console.log("error");
         }
