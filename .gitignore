@@ -1,31 +1,29 @@
-node_modules/
-npm-debug.log
-yarn-error.log
+# Ambiente virtuale
+venv/
+__pycache__/
 
+# Configurazioni e credenziali
 .env
-.env.local
-.env.*.local
+*.env
 
+# Log e file temporanei
+*.log
 logs/
-.log
-npm-debug.log
-yarn-debug.log*
-yarn-error.log*
-
-package-lock.json
-yarn.lock
-
-build/
-dist/
-
-.vscode/
-.idea/
-.DS_Store
+tmp/
 *.swp
 *.swo
 
-docker-compose.override.yml
+# Dipendenze e build
+*.pyc
+*.pyo
+*.pyd
+instance/
+.mypy_cache/
+pip-log.txt
+pip-delete-this-directory.txt
 
-*.bak
-*.tmp
-*.log
+# IDE e editor
+.vscode/
+.idea/
+*.iml
+.DS_Store
