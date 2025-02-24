@@ -1,0 +1,29 @@
+# Ambiente virtuale
+venv/
+__pycache__/
+
+# Configurazioni e credenziali
+.env
+*.env
+
+# Log e file temporanei
+*.log
+logs/
+tmp/
+*.swp
+*.swo
+
+# Dipendenze e build
+*.pyc
+*.pyo
+*.pyd
+instance/
+.mypy_cache/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE e editor
+.vscode/
+.idea/
+*.iml
+.DS_Store
