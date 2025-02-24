@@ -2,6 +2,7 @@
 
 ## Descrizione
 Questa API permette di gestire in modo sicuro le credenziali degli utenti, offrendo funzionalità di archiviazione, recupero e gestione delle password crittografate.
+Flask e MongoDB
 
 ## Funzionalità
 - **Registrazione e autenticazione degli utenti**
